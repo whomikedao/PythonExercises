@@ -20,7 +20,7 @@ word = word.upper()
 new_word = ''
 for i in word:
     if i in leet:
-        new_word = i.replace(leet[][])
+        new_word = i.replace(leet[i])
     else:
         new_word += i
 print(word)
