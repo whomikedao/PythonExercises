@@ -19,8 +19,8 @@ word = 'leet'
 word = word.upper()
 new_word = ''
 for i in word:
-    if i == (leet[][]]):
-        new_word = i.replace([][])
+    if i in leet:
+        new_word = i.replace(leet[][])
     else:
         new_word += i
 print(word)
