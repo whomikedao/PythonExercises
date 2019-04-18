@@ -45,7 +45,7 @@ numbers = [1, 2, 3]
 numbers1 = [1, 2, 3]
 result = []
 for i in numbers:
-    i = i * numbers1[numbers[j]]
+    i = i * numbers1[numbers[index]]
     result.append(i)
 print(result)
 
