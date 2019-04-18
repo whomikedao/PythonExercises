@@ -28,8 +28,18 @@
 #     print(star)
 
 #6
-for i in range(5):
-    star = '*'
-    for j in range(i):
-        star += '*'
-    print(star)
+height = int(input("Height:" ))
+width = int(input("Width: "))
+
+for i in range(height):
+    if i == 0 or i == height -1:
+        print("*" * (width+2))
+    else:
+        print("*" + " "*width + "*")
+
+#7
+# for i in range(5):
+#     star = '*'
+#     for j in range(i):
+#         star += '*'
+#     print(star)
