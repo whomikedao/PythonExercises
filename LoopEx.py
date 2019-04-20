@@ -62,12 +62,13 @@
 #     print(result)
 
 #bonus 1
-text = input("Text? ")
+# text = input("Text? ")
 
-for i in range(1):
-    border = "****"
-    for j in range(len(text)):
-        border += "*"
-    print(border)
-    print("* " + text + " *")
-    print(border)
+# for i in range(1):
+#     border = "****"
+#     for j in range(len(text)):
+#         border += "*"
+#     print(border)
+#     print("* " + text + " *")
+#     print(border)
+
