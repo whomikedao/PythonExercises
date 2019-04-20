@@ -28,10 +28,9 @@
 
 
 #5
-word = input('Give me a word: ')
-word = word.lower()
-print(len(word))
-for i in range(len(word)):
-    if word[i] == word[i+1]:
-        print(word[0:i] + word[i]*3 + word[i:len(word)])
+# word = input('Give me a word: ')
+# word = word.lower()
+# for i in range(len(word)):
+#     if word[i] == word[i+1]:
+#         print(word[0:i] + word[i]*3 + word[i:len(word)])
     
