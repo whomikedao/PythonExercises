@@ -67,3 +67,49 @@ from numpy import arange
 # plot.show
 
 #6
+# def sine(x):
+#     return sin(x)
+
+# xs = list(range(-5, 6, .1))
+# ys = []
+
+# for x in xs:
+#     ys.append(sine(x))
+
+# plot.plot(xs, ys)
+# plot.show
+
+#7
+# def dToC(celcius):
+#     fahren = celcius*1.8+32
+#     return fahren
+
+# xs = list(range(-5, 6))
+# ys = []
+
+# plot.plot(xs, ys)
+# plot.show
+
+#8
+
+# def playAgain(answer):
+#     if answer == 'Y':
+#         return True
+#     elif == 'N':
+#         return False 
+
+# print(playAgain(answer = input("Do you want to play again?")))
+
+#9
+# def playAgain(answer):
+#     answer = answer.lower()
+#     while answer != 'y' or answer != 'n':
+#         print "Invalid input"
+#         if answer == 'y':
+#             return True
+#         elif answer == 'n':
+#             return False
+
+# print(playAgain(useranswer = input("Would you like to play again")))
+
+
