@@ -28,45 +28,35 @@ def deleteEntry(name):
 
 def listEntry():
     for k, v in phonebook.items():
-        print(k, v)
+        print("-----")
+        print(k +":" + v)
 
 phonebook = {}
 
-menu()
-question()
 session = True
 while session == True:
-    if question == 1:
-        nameLookup = input("Who would you like to look for? ")
-        print(searchEntry(nameLookup))
-        menu()
-        question()
-    if question == 2:
-        name = input('Name: ')
-        number = str(input('Phone Number: '))
-        setEntry(name, number)
-        menu()
-        question()
-    if question == 3:
-        name = input('Who would you like to delete? ')
-        name = name.lower()
-        deleteEntry(name)
-        menu()
-        question()
-    if question == 4:
-        listEntry()
-        menu()
-        question()
-    if question == 5:
-        session = False 
-
-
-
-
-
-
-
-
-
-
-
+    answer = question()
+    while answer != 5:
+        if answer == 1:
+            nameLookup = input("Who would you like to look for? ")
+            nameLookupL = nameLookup.lower()
+            print("Found entry for {}: {}".format(nameLookup, searchEntry(nameLookupL)))
+            break
+        elif answer == 2:
+            name = input('Name: ')
+            number = str(input('Phone Number: '))
+            setEntry(name, number)
+            print("Entry stored for {}.".format(name))
+            break
+        elif answer == 3:
+            name = input('Who would you like to delete? ')
+            nameL = name.lower()
+            deleteEntry(nameL)
+            print("Entry deleted for {}.".format(name))
+            break
+        elif answer == 4:
+            listEntry()
+            break
+    if answer == 5:
+        session = False
+        print("Bye")
